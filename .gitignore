@@ -1,0 +1,11 @@
+.DS_Store
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Node.js files
+node_modules/
+npm-debug.log
+.env
