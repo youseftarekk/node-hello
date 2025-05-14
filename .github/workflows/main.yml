@@ -25,8 +25,8 @@ jobs:
     - name: Install ESLint v8
       run: npm install -g eslint@8
 
-    - name: Run linting
-      run: eslint . --config .eslintrc.js
+    - name: Run linting with auto-fix
+      run: eslint . --config .eslintrc.js --fix
 
     - name: Login to Docker Hub
       uses: docker/login-action@v2
