@@ -44,6 +44,3 @@ jobs:
         push: true
         tags: |
           ${{ secrets.DOCKER_HUB_USERNAME }}/node-hello:latest
-          ${{ secrets.DOCKER_HUB_USERNAME }}/node-hello:${{ github.sha }}
-        cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/node-hello:buildcache
-        cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/node-hello:buildcache,mode=max
